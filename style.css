@@ -56,7 +56,7 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
 }
 
-.nav_buttons{
+.nav_buttons {
     display: flex;
     gap: 10px;
 }
@@ -71,7 +71,7 @@ a {
     cursor: pointer;
 }
 
-.nav_buttons>button:hover{
+.nav_buttons>button:hover {
     background-color: #8dc63f;
     color: white;
 }
@@ -95,7 +95,7 @@ nav li {
     font-weight: 600;
 }
 
-nav li:hover{
+nav li:hover {
     color: #232323;
 }
 
@@ -157,6 +157,8 @@ nav li:hover{
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .pay_input input {
@@ -239,6 +241,7 @@ nav li:hover{
 .services {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .service {
@@ -274,7 +277,7 @@ nav li:hover{
     cursor: pointer;
 }
 
-.project_card button{
+.project_card button {
     cursor: pointer;
 }
 
@@ -731,7 +734,7 @@ nav li:hover{
     flex-direction: column;
 }
 
-.store-btns > img{
+.store-btns>img {
     width: 180px;
     border-radius: 10px;
     border: 1px solid gray;
@@ -774,7 +777,7 @@ nav li:hover{
     height: 100px;
 }
 
-.footer-bottom > div{
+.footer-bottom>div {
     border-top: 1px solid #ffffff33;
     width: 100%;
     display: flex;
@@ -782,7 +785,83 @@ nav li:hover{
     padding: 10px;
 }
 
-.footer-bottom-logos{
+.footer-bottom-logos {
     display: flex;
     gap: 100px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar li:nth-child(4),
+    .navbar li:nth-child(5),
+    .navbar li:nth-child(6) {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        height: auto;
+    }
+
+    .donation-bar {
+        justify-content: center;
+    }
+
+    .bubbles {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services {
+        align-items: center;
+        gap: 24px;
+    }
+
+    .projects_card {
+        grid-template-columns: 1fr;
+    }
+
+    .other-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .testimonial {
+        padding: 20px 4%;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin-bottom: 30px;
+    }
+
+    .footer-col h3 {
+        font-size: 18px;
+    }
 }
